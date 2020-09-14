@@ -1,0 +1,43 @@
+Java Script
+
+기본 형태
+	: document.~
+	ex) document.write();
+	
+	
+문자형 데이터 작성할 때 중첩 따옴표 조심해야한다.
+	document.write("say "hello""); ==> 오류남.
+	document.write("say \"hello\""); ===> 정답.
+
+
+undefined : 아직 값이 들어오지 않았다.
+	ex) var num; ===> var num 의 값은 undefined임.
+	
+null : 데이터 모두 지워짐. 
+
+undefined와 null의 차이 : null은 null이란 값이다. undefined는 값이 아직 들어 오지 않았다는 의미이다. 
+
+document란?
+	객체라고 볼수 있다.
+	document.write();는 document객체의 write()메서드를 접근해서 사용하는 것이다.
+
+
+문자 + 숫자 = 문자
+
+
+'===' : 테이터 형이 같다. '!==' : 테이터 형이 다르다.
+
+
+&&와 ||
+
+	&& 먼저 연산후 ||를 연산함.
+	
+true && false 
+	: true vs false ==> false가 이김.
+
+
+
+
+
+
+	

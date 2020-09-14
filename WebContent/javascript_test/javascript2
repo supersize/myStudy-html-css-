@@ -1,0 +1,97 @@
+내장 객체
+	자바 스크립트 엔진에 객체를 생성할 수 있는 함수가 내장되어, 필요한 경우 생성하여 사용
+		ex) 참조변수 = new 객체생성함수();
+		// 방법 1
+		var car = new Object();
+		car.color = "white"; // 변수
+		car.price = "1000만원";
+		car.getInfo = function(){ // 메서드
+			document("색상 : ", this.color,"<br>");
+			document("가격 : ", this.price,"<br>");
+		}	
+		
+		//방법2
+		var car = { // {}는 객체 생성한단 의미
+			"color":"white", // ':' : = 대신 사용함. 
+			"price":"1000만원",
+			"getInfo":function(){
+				
+			}
+		};
+
+날짜 정보 객체
+	: 날짜에 대한 정보를 저장하는 객체
+	참조변수  = new Date();
+	참조변수 = new Date("년/월/일");
+
+	var today = new Date();
+	var y = today.getFullYear();
+	var m = today.getMonth(); // 월은 -1으로 출력됨.
+	var d = today.getDate();
+	var day = today.getDay();
+	
+	document.write(y, "<br>");
+	document.write(m, "<br>");
+	document.write(d, "<br>");
+	document.write(day, "<br>");
+
+
+수학객체
+	수학과 관련되 기능과 속성을 제공
+	
+	Math.메서드();
+	Math.속성;
+	
+	var num = 1.56;
+	var r = Math.round(num); // 반올림
+	var f = Math.floor(num); // 소수점 절삭
+	var c = Math.ceil(num); // 소수점 첫째자리 올림.
+	var rd = Math.random(); // 0~1 사이에서 무작위 난수 발생
+	
+	document.write(r, "<br>");
+	document.write(f, "<br>");
+	document.write(c, "<br>");
+	document.write(rd, "<br>");
+
+문자 객체
+	: 문자 기능과 관련된 기능과 속성 제공
+	참조변수  = new String();
+	참조변수 = "String";
+	
+	참조변수.메서드();
+	참조변수.속성();
+
+	var str = "hello world!";
+
+	document.write(str.charAt(6), "<br>"); // w
+	document.write(str.indexOf("w"), "<br>"); // 6
+	document.write(str.lastIndexOf("e"), "<br>"); // 1
+	document.write(str.indexOf("p"), "<br>"); // -1
+
+배열 객체
+	: 여러개의 데이터를 하나의 저장소에 저장
+	참조변수 = new Array(val1, val2, val3);
+	
+	참조변수 = new Array();
+	참조변수[0] = val1;
+	참조변수[1] = val2;
+	참조변수[2] = val3;
+	
+	참조변수 = [val1, val2, val3];
+	
+	참조변수[인덱스 번호]
+
+
+브라우져 객체
+	브라우져(window) 내장된 객체를 가르킨다.
+	
+	window(
+		document, 
+		screen, 
+		location, 
+		history, 
+		navigator - os, 브라우져 정보 내장
+		)
+
+
+
