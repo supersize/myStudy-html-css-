@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	#inline img {
+		display : inline; 
+		margin : 10px;
+	}
+	
+	#block img {
+ 		display : block; 
+		margin : 50px;
+	}
+	
+	nav ul li {
+		display : inline-block; 
+		margin : 20px;
+	}
+	
+	#none {
+		display : none;
+	}
+	
+</style>
+</head>
+<body>
+	<div id="inline">
+		<img style="width:500px; height:400px;" src="../images/rose.jpg">
+		<img style="width:500px; height:400px;" src="../images/yo.jpg">
+	</div>
+	<div id="block">
+		<img style="width:500px; height:400px;" src="../images/rose.jpg">
+		<img style="width:500px; height:400px;" src="../images/yo.jpg">
+	</div>
+	
+	<hr>
+	
+	<nav>
+		<ul>
+			<li><a href="#">애완견 종류</a></li>
+			<li><a href="#">입양하기</a></li>
+			<li><a href="#">건강돌보기</a></li>
+			<li><a href="#">더불어 살기</a></li>
+		</ul>
+		<h2>애완견종류</h2>
+	</nav>
+	
+	inline-block : inline만 사용하면 높이, 가로 , 마진, 패딩 등이 잘 설정이 안되지만 inline-block은 통일 시킬수 있다.
+	<hr>
+	none 테스트 
+	<div class="none" id="none"> none~~~</div>(여기애 "none"이 있음.)
+	
+	none과 visibilty: hidden의 차이점 : none은 요소마저 사라져 버린다. visibilty는 보이지만 않을 뿐 요소는 사라지지 않는다. 즉 자리는 차지하고 있다.
+	
+	
+</body>
+</html>
