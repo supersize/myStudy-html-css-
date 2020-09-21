@@ -1,0 +1,30 @@
+<audio>
+- 주로 mp3 파일로 쓴다.
+- 속성 autoplay, controls, loop, preload, muted
+- 속성들을 다중으로 삽입 가능하다.
+
+<video>
+- control 속성 사용가능
+
+<source>
+- 여러 미디어 파일들을 제공해주기위해 만듬
+- type src codecs
+- MIME : 브라우저에 확장자가 없는 경우도 있기 때문에 서버관리자에게 MIME타입을 같이 선언해서 구현해주어야한다.
+	서버에서 클라이언트에게 응답 보낼때 파일 표시법을 알려주기위한 정보
+
+preload 속성
+	- none: 아무것도 안함. 재생 버튼 눌러야 시작
+	- metadata : 아무것도 안하고 메타데이터만 미리 다운 받음.
+	- auto: 미리 모두 다운받고, 재상버튼 클릭하면 재생.
+poster 속성 
+	- 동영상에 문제가 생기면 동영상 가운데에 자신이 지정해 놓은 것을 보여준다.
+
+
+<track>
+	- 자막 태그
+	- kind, label, default, src, srclang
+	- kind의 종류들 : subtile, caption,description, chapter, metadata
+
+
+하위 선택자(자손 선택자) 
+	- 바로 위 부모 아래 있는 모든 선택자를 지칭.
