@@ -1,0 +1,31 @@
+translate 
+	-이동
+scale
+	- 확대
+rotate
+	- 회전
+skew
+	- 왜곡
+	
+transform-origin
+	- 꼭지점 회전
+perspective 
+	- 원근감
+perspective-origin
+				-더 깊은 원근감
+transform-style
+				- 3d 줌 : flat, preserve-3d
+backface-visibility 
+				- 뒷면 보여줄지 여부
+
+transition-property
+				- 트랜지션 할 대상 설정. 안하면 모두
+transition-duration
+					-트랜지션 지속시간
+transition-time-function
+					-트랜지션 속도
+transition-delay
+					- 트랜지션 지연 시간.
+
+키프레임(@keyframe)
+					- 애니메이션 중간에 스타일 바뀌는 구간.	
